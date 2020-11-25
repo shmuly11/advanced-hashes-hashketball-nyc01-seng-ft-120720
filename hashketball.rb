@@ -170,6 +170,7 @@ def player_numbers (name)
      if v[:team_name] == name
         v[:players].each do |i|
           jersey_nums << i[:number]
+          binding.pry
         end
 
      end
