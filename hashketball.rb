@@ -169,7 +169,7 @@ def player_numbers (name)
    v.each do |k1, v1|
      if v[:team_name] == name
         v[:players].each do |i|
-          jersey_nums << i[:numbers]
+          jersey_nums << i[:number]
         end
 
      end
