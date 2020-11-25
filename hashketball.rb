@@ -130,18 +130,13 @@ end
 # Write code here
 def num_points_scored (name)
  game_hash.each do |k, v|
- #binding.pry
-   v.each do |k1, v1| 
-    # binding.pry
+   v.each do |k1, v1|
       v[:players].each do |i|
-    # binding.pry
-       #i.each do [k2, v2]
-     #  binding.pry
         if i[:player_name] == name
          return i[:points]
         end
-      # end
      end
    end
   end
 end
+
