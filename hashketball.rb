@@ -133,9 +133,9 @@ def num_points_scored (name)
  #binding.pry
    v.each do |k1, v1| 
     # binding.pry
-      v[:players].each do |stat|
+      v[:players].each do |i|
       binding.pry
-       stat.each do [k2, v2]
+       i.each do [k2, v2]
        binding.pry
         if v2 == name
          return game_hash[k][k1][stat][:points]
