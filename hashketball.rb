@@ -130,10 +130,11 @@ end
 # Write code here
 def num_points_scored (name)
  # game_hash.each do |k, v|
- binding.pry
-    game_hash[:home][:players][stat].each do |k1, v1| 
+# binding.pry
+    game_hash[:home][:players].each do |stat| 
+      stat.each|k, v|
       binding.pry
-      if v1 == name
+      if v == name
        return game_hash[:home][:players][stat][:points]
      end
    end
