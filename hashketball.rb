@@ -198,5 +198,6 @@ def team_names
       team_names << v[:team_name]
    end
   end
+  team_names = team_names.uniq
   team_names
 end
