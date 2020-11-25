@@ -204,14 +204,19 @@ end
 
 def big_shoe_rebounds 
   biggest = 0 
+  rebound = 0
  game_hash.each do |k, v|
    v.each do |k1, v1|
+    # count = 0 
       v[:players].each do |i|
         binding.pry
-      
+     # while count < v[:players].length
         if i[:shoe] > biggest
-          biggest = i[:shoe]
-         return i[:rebounds]
+          biggest = i[:shoe]  
+          rebound = i[:rebound]
+        end
+        #  count += 1 
+       
         end
      end
    end
