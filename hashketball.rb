@@ -170,7 +170,6 @@ def player_numbers (name)
      if v[:team_name] == name
         v[:players].each do |i|
           jersey_nums << i[:number]
-        #  binding.pry
         end
 
      end
@@ -178,4 +177,16 @@ def player_numbers (name)
   end
   jersey_nums = jersey_nums.uniq 
   jersey_nums
+end
+
+def player_stats (name)
+ game_hash.each do |k, v|
+   v.each do |k1, v1|
+      v[:players].each do |i|
+        if i[:player_name] == name
+         return i
+        end
+     end
+   end
+  end
 end
