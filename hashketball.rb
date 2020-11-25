@@ -213,7 +213,7 @@ def big_shoe_rebounds
      # while count < v[:players].length
         if i[:shoe] > biggest
           biggest = i[:shoe]  
-          rebound = i[:rebound]
+          rebound = i[:rebounds]
           binding.pry
         end
         #  count += 1 
