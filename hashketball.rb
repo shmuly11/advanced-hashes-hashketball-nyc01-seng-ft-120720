@@ -209,7 +209,7 @@ def big_shoe_rebounds
    v.each do |k1, v1|
     # count = 0 
       v[:players].each do |i|
-        binding.pry
+       # binding.pry
      # while count < v[:players].length
         if i[:shoe] > biggest
           biggest = i[:shoe]  
