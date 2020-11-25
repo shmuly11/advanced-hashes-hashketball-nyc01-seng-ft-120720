@@ -134,7 +134,7 @@ def num_points_scored (name)
    v.each do |k1, v1| 
     # binding.pry
       v[:players].each do |i|
-     # binding.pry
+     binding.pry
        i.each do [k2, v2]
        binding.pry
         if v2 == name
