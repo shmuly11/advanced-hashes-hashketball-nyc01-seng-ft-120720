@@ -214,6 +214,7 @@ def big_shoe_rebounds
         if i[:shoe] > biggest
           biggest = i[:shoe]  
           rebound = i[:rebound]
+          binding.pry
         end
         #  count += 1 
        
