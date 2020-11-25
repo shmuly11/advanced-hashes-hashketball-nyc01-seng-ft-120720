@@ -190,3 +190,13 @@ def player_stats (name)
    end
   end
 end
+
+def team_names
+  team_names = []
+ game_hash.each do |k, v|
+   v.each do |k1, v1|
+      team_names << v[:team_name]
+   end
+  end
+  team_names
+end
