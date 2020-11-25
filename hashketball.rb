@@ -133,7 +133,7 @@ def num_points_scored (name)
  #binding.pry
    v.each do |k1, v1| 
     # binding.pry
-      k1.each do |stat|
+      v1.each do |stat|
       binding.pry
        stat.each do [k2, v2]
        binding.pry
